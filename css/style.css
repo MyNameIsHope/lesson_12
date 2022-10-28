@@ -1,0 +1,133 @@
+body {
+	background-color: dimgray;
+}
+
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+}
+
+.block {
+	padding: 30px;
+}
+
+.block__item {
+	height: 300px;
+	width: 300px;
+	background-color: #000;
+	position: relative;
+	display: inline-block;
+	margin-bottom: 70px;
+	perspective: 300px;
+	perspective-origin: center;
+}
+
+.block__item:not(:last-child) {
+	margin-right: 70px;
+}
+
+.items {
+	height: 300px;
+	width: 300px;
+	text-align: center;
+	padding-top: 50%;
+	text-transform: uppercase;
+	display: inline-block;
+
+
+}
+
+.block__translate {
+	background-color: aquamarine;
+}
+
+
+.block__translate:hover{
+	transform: translate(20%,20%);
+	transition: all 3s;
+}
+
+.block__scale {
+	background-color: brown;
+}
+
+
+.block__scale:hover{
+	transform: scale(0.5);
+	transition: all 3s;
+}
+
+
+.block__rotate {
+	background-color: cadetblue;
+}
+
+
+
+.block__rotate:hover{
+	transform: rotate(10deg);
+	transition: all 3s;
+}
+
+.block__skew {
+	background-color: burlywood;
+}
+
+
+.block__skew:hover{
+	transform: skew(-10deg,0deg);
+	transition: all 3s;
+}
+
+.block__matrix {
+	background-color: coral;
+}
+
+.block__matrix:hover{
+	transform: matrix(1, 0.5, 1, 0, 0, 0);
+	transition: all 3s;
+}
+
+.block__twod {
+	background-color: darkmagenta;
+}
+
+.block__twod:hover{
+	transform: translate(20%, 20%) scale(0.5) rotate(30deg) skew(20deg, 20deg);
+	transition: all 3s;
+}
+
+.block__transform-origin {
+	background-color: chartreuse;
+}
+
+
+.block__transform-origin:hover{
+	transform-origin: 0 0;
+	transform: rotate(20deg);
+	transition: all 3s;
+}
+
+
+
+
+.block__perspective {
+	background-color: darkblue;
+}
+
+.block__perspective:hover {
+	transform: rotateX(20deg);
+}
+
+
+.block__translate3d {
+	background-color: darkmagenta;
+
+}
+
+.block__translate3d:hover {
+	transform: translate3d(20px, 20px, 30px);
+}
+
+
